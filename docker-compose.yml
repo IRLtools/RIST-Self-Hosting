@@ -37,6 +37,8 @@ services:
     tty: true
     logging:
       driver: none
+    environment:
+      - RIST_RELAY_KEY=${RIST_RELAY_KEY}
     networks:
       network:
         ipv4_address: 172.19.0.6
@@ -65,6 +67,8 @@ services:
     tty: true
     logging:
       driver: none
+    environment:
+      - RIST_RELAY_KEY=${RIST_RELAY_KEY}
     networks:
       network:
         ipv4_address: 172.19.0.2
